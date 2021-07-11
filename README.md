@@ -2,7 +2,7 @@
 
 Starter template for Google App Script development in local.
 
-# Features
+## 🎨 Features
 
 - Deploy local project with clasp
 - Use TypeScript
@@ -11,7 +11,7 @@ Starter template for Google App Script development in local.
 - Format code with prettier
 - Pre commit lint and format with husky and lint-stage
 
-# Try it now!
+## 🚀 Try it now!
 GitHub Template
 [Create a repo from this template on GitHub](https://github.com/kawamataryo/clasp-webpack-template/generate)
 
@@ -24,16 +24,16 @@ Fix the `project_id` in `.clasp.json` to your GAS project.
 }
 ```
 
-# Usage
+## ⚒ Usage
 
-## Build
+### Build
 Build project with Webpack.
 
 ```
 npm run build
 ```
 
-## Deploy
+### Deploy
 Deploy project with clasp.
 
 ```
