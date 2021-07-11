@@ -1,4 +1,4 @@
-# Clasp Webpack template
+# Clasp starter template
 
 Starter template for Google App Script development in local.
 
