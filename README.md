@@ -1,21 +1,21 @@
-# Google App Script starter template
+# **ここにプロジェクト名を入れる**
 
-Starter template for Google App Script development in local.
+**ここにこのプロジェクトの説明を書く**
 
-## 🎨 Features
+## Links
 
-- Deploy local project with [clasp](https://github.com/google/clasp)
-- Use TypeScript
-- Bundle file with Webpack5 （You can use npm modules）
-- Lint code with [ESLint](https://github.com/eslint/eslint) 
-- Format code with [prettier](https://github.com/prettier/prettier)
-- Pre commit lint and format with [husky](https://github.com/typicode/husky) and [lint-stage](https://github.com/okonet/lint-staged)
+- **関連するspreadsheetsやGASへのリンク**
+- **関連するesaへのリンク**
+- **関連するslack channelへのリンク**
 
-## 🚀 Try it now!
-GitHub Template
-[Create a repo from this template on GitHub](https://github.com/kawamataryo/google-app-script-starter-template/generate)
+## 使い方
 
-Fix the `project_id` in `.clasp.json` to your GAS project.
+### 事前準備
+
+1. [Create a repo from this template on GitHub](https://github.com/graffer-inc/gas-google-app-script-starter-template/generate)
+2. [Turn on the Apps Script API](https://script.google.com/home/usersettings)
+3. `$ yarn install`
+4. Fix the `project_id` in `.clasp.json`
 
 ```.clasp.json
 {
@@ -24,17 +24,39 @@ Fix the `project_id` in `.clasp.json` to your GAS project.
 }
 ```
 
-## ⚒ Usage
+5. Login to clasp
 
-### Build
+```
+$ yarn clasp login
+```
+
+6. Get values from local file
+
+```
+cat ~/.clasprc.json
+```
+
+7. Set the values to GitHub Secrets
+
+[Open actions secrets](./settings/secrets/actions)
+* GAS_CLIENT_ID
+* GAS_CLIENT_SECRET
+* GAS_REFRESH_TOKEN
+
+### 開発方法
+
+#### Build
+
 Build project with Webpack.
 
 ```
 npm run build
 ```
 
-### Deploy
+#### Deploy
+
 Deploy project with clasp.
+(or `git push origin main`)
 
 ```
 npm run deploy

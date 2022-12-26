@@ -5,7 +5,7 @@ import * as CopyPlugin from "copy-webpack-plugin";
 
 const config: Configuration = {
   entry: "./src/main.ts",
-  mode: "production",
+  mode: "development",
   output: {
     filename: "main.js",
     path: path.join(__dirname, "dist"),
