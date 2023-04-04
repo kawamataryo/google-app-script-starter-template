@@ -31,7 +31,6 @@
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1"
   },
-  "dependencies": {},
   "lint-staged": {
     "src/*.{js,ts}": "eslint --cache --fix",
     "src/*.{js,ts,md}": "prettier --write"
