@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "deploy": "yarn build && clasp push",
+    "deploy": "npm run build && clasp push",
     "lint": "prettier 'src/**/*.ts' && eslint 'src/**/*.ts'",
     "lint:fix": "prettier --write 'src/**/*.ts' && eslint --fix 'src/**/*.ts'",
     "prepare": "husky install"
